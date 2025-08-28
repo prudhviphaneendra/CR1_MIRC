@@ -1,0 +1,87 @@
+managed implementation in class ZBP_R_GRC_PICKLST_P unique;
+strict ( 2 );
+with draft;
+extensible;
+define behavior for ZR_GRC_PICKLST_P alias Parent
+persistent table ZTGRC_PICKLST_P
+extensible
+draft table ZGRC_PCKLS000_D
+etag master Lastchangedat
+lock master total etag Lastchangedat
+late numbering
+authorization master( global )
+
+{
+//  field ( mandatory : create )
+//   ListId;
+
+  field ( readonly )
+   ListId,
+   Createdby,
+   Createdat,
+   Lastchangedby,
+   Lastchangedat;
+
+//  field ( readonly : update )
+//   ListId;
+
+
+  create;
+  update;
+  delete;
+  association _Child { create; with draft; }
+
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Edit;
+  draft action Resume;
+  draft determine action Prepare;
+
+  validation duplicate on save { create;
+//  create;
+      field ListName ; }
+  mapping for ZTGRC_PICKLST_P corresponding extensible
+  {
+    ListId = list_id;
+    ListName = list_name;
+    AppRelated = app_related;
+    Createdby = createdby;
+    Createdat = createdat;
+    Lastchangedby = lastchangedby;
+    Lastchangedat = lastchangedat;
+  }
+
+}
+define behavior for ZR_GRC_PICKLST_C alias Child
+implementation in class ZBP_R_GRC_PICKLST_P unique
+persistent table ztgrc_picklst_c
+draft table ZGRC_PCKLS000C_D
+lock dependent by _Parent
+authorization dependent by _Parent
+etag master LastChangedAt
+//early numbering
+late numbering
+{
+
+ update;
+ delete;
+ field(readonly) ListId,ValueId,Createdby,Createdat,Lastchangedby,Lastchangedat;
+ association _Parent{ with draft; }
+
+validation duplicate on save { create;
+      field ListValue ; }
+ determination setdefaults on modify { create; }
+      mapping for ztgrc_picklst_c
+  {
+    ListId = list_id;
+    ValueId = value_id;
+    ListValue = list_value;
+    ListDesc = list_desc;
+    Active = active;
+    Language = lang;
+    Createdby = createdby;
+    Createdat = createdat;
+    Lastchangedby = lastchangedby;
+    Lastchangedat = lastchangedat;
+  }
+}

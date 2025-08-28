@@ -1,0 +1,11 @@
+@EndUserText.label: 'Access Control For ZR_ASSET_RECTYPE_PL'
+@MappingRole: true
+define role ZR_ASSET_RECTYPE_PL {
+    grant
+        select
+            on
+                ZR_ASSET_RECTYPE_PL
+                    where
+                        (Id) = aspect pfcg_auth(Z_ASSET_T, Z_ARECT_F, ACTVT = '03');
+                        
+}

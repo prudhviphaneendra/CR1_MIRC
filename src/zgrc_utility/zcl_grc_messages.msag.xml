@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_MSAG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <T100A>
+    <ARBGB>ZCL_GRC_MESSAGES</ARBGB>
+    <MASTERLANG>E</MASTERLANG>
+    <STEXT>Utility Message Class</STEXT>
+   </T100A>
+   <T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZCL_GRC_MESSAGES</ARBGB>
+     <MSGNR>001</MSGNR>
+     <TEXT>Must provide a parent level value for any parent node at level 4 or below</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZCL_GRC_MESSAGES</ARBGB>
+     <MSGNR>002</MSGNR>
+     <TEXT>Aggregate limit must be ≥ occurrence limit</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZCL_GRC_MESSAGES</ARBGB>
+     <MSGNR>003</MSGNR>
+     <TEXT>Share percentage for each carrier must ≤ 100%</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZCL_GRC_MESSAGES</ARBGB>
+     <MSGNR>004</MSGNR>
+     <TEXT>Policy Inception date must be ≤ Policy Expiration date</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZCL_GRC_MESSAGES</ARBGB>
+     <MSGNR>005</MSGNR>
+     <TEXT>Excess carrier notify date  must be ≥ Inception Date</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZCL_GRC_MESSAGES</ARBGB>
+     <MSGNR>006</MSGNR>
+     <TEXT>Pro Rata share for each policy must be ≤ 100%</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZCL_GRC_MESSAGES</ARBGB>
+     <MSGNR>007</MSGNR>
+     <TEXT>Section Aggregate limit must be ≥ section Occurrence limit.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZCL_GRC_MESSAGES</ARBGB>
+     <MSGNR>008</MSGNR>
+     <TEXT>Section Inception date must be ≤ Section Expiration date</TEXT>
+    </T100>
+   </T100>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_MSAG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <T100A>
+    <ARBGB>ZGRC_RMIS</ARBGB>
+    <MASTERLANG>E</MASTERLANG>
+    <STEXT>RMIS messages</STEXT>
+   </T100A>
+   <T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZGRC_RMIS</ARBGB>
+     <MSGNR>001</MSGNR>
+     <TEXT>Expense payment cannot be less than the total expenses paid</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZGRC_RMIS</ARBGB>
+     <MSGNR>002</MSGNR>
+     <TEXT>Indemnity payment cannot be less than the total Indemnity paid</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZGRC_RMIS</ARBGB>
+     <MSGNR>003</MSGNR>
+     <TEXT>Not Enough Expense Reserve to Post Transaction</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZGRC_RMIS</ARBGB>
+     <MSGNR>004</MSGNR>
+     <TEXT>Not Enough Indemnity / Property Damage Reserve to Post Transaction</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZGRC_RMIS</ARBGB>
+     <MSGNR>005</MSGNR>
+     <TEXT>Asset Value can not be negative</TEXT>
+    </T100>
+   </T100>
+  </asx:values>
+ </asx:abap>
+</abapGit>

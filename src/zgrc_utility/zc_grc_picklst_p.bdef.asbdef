@@ -1,0 +1,28 @@
+projection implementation in class ZBP_C_GRC_PICKLST_P unique;
+strict ( 2 );
+extensible;
+use draft;
+use side effects;
+define behavior for ZC_GRC_PICKLST_P alias ZcGrcPicklstP
+extensible
+use etag
+
+{
+  use create;
+  use update;
+  use delete;
+  use association _Child { create; with draft; }
+  use action Edit;
+  use action Activate;
+  use action Discard;
+  use action Resume;
+  use action Prepare;
+
+}
+define behavior for ZC_GRC_PICKLST_C alias Child
+{
+  // use create;
+  use update;
+  use delete;
+  use association _Parent { with draft; }
+}

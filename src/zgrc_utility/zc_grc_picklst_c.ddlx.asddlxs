@@ -1,0 +1,123 @@
+@Metadata.layer: #CORE
+@UI.headerInfo.title.type: #STANDARD
+@UI.headerInfo.title.value: 'ListValue'
+@UI.headerInfo.description.type: #STANDARD
+@UI.headerInfo.description.value: 'ValueId'
+@UI.presentationVariant: [
+  { sortOrder: [ { by: 'ListValue', direction: #ASC } ],
+    visualizations: [{type: #AS_LINEITEM }] } ]
+annotate entity ZC_GRC_PICKLST_C
+    with 
+{
+    @EndUserText.label: 'ListId'
+  @UI.facet: [ {
+    label: 'General Information', 
+    id: 'GeneralInfo', 
+    purpose: #STANDARD, 
+    position: 10 , 
+    type: #IDENTIFICATION_REFERENCE
+  } ]
+    @UI.identification: [ {
+    position: 10 , 
+    label: 'Value ID'
+  } ]
+   @UI.lineItem: [ {
+    position: 10 , 
+    label: 'Value ID'
+  } ]
+  @UI.selectionField: [ {
+    position: 10 
+  } ]
+   ValueId;
+ @EndUserText.label: 'List Value'
+       @UI.identification: [ {
+    position: 20 , 
+    label: 'List Value'
+  } ]
+   @UI.lineItem: [ {
+    position: 20 , 
+    label: 'List Value'
+  } ]
+  @UI.selectionField: [ {
+    position: 20 
+  } ]
+   ListValue;
+            @UI.identification: [ {
+    position: 30 , 
+    label: 'App Related to'
+  } ]
+   @UI.lineItem: [ {
+    position: 30 , 
+    label: 'App Related to'
+  } ]
+    @UI.selectionField: [ {
+    position: 30 
+  } ]
+   ListDesc;
+    @UI.identification: [ {
+    position: 40 , 
+    label: 'Active'
+  } ]
+  @UI.selectionField: [ {
+    position: 40 
+  } ]
+   @UI.lineItem: [ {
+    position: 40 , 
+    label: 'Active'
+  } ]
+   Active;
+             @UI.identification: [ {
+    position: 50 , 
+    label: 'Language'
+  } ]
+   @UI.lineItem: [ {
+    position: 50 , 
+    label: 'Language'
+  } ]
+  
+  Language;
+  
+        @UI.identification: [ {
+    position: 60 , 
+    label: 'Created By'
+  } ]
+   @UI.lineItem: [ {
+    position: 60 , 
+    label: 'Created By'
+  } ]
+  @UI.selectionField: [ {
+    position: 50 
+  } ]
+  Createdby;
+  
+    @UI.identification: [ {
+    position: 70 
+  } ]
+  @UI.lineItem: [ {
+    position: 70 
+  } ]
+  Createdat;
+  
+      @UI.identification: [ {
+    position: 80 , 
+    label: 'Last Changed By'
+  } ]
+   @UI.lineItem: [ {
+    position: 80 , 
+    label: 'Last Changed By'
+  } ]
+  Lastchangedby;
+  
+    @UI.identification: [ {
+    position: 90 
+  } ]
+  @UI.lineItem: [ {
+    position: 90 
+  } ]
+  Lastchangedat;
+  
+ 
+   
+    
+    
+}

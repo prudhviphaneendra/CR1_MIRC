@@ -1,0 +1,104 @@
+@Metadata.layer: #CORE
+@UI.headerInfo.title.type: #STANDARD
+@UI.headerInfo.title.value: 'ListName'
+@UI.headerInfo.description.type: #STANDARD
+@UI.headerInfo.description.value: 'ListId'
+@UI.presentationVariant: [
+  { sortOrder: [ { by: 'ListName', direction: #ASC } ],
+    visualizations: [{type: #AS_LINEITEM }] } ]
+annotate view ZC_GRC_PICKLST_P with
+{
+  @EndUserText.label: 'ListId'
+  @UI.facet: [ {
+    label: 'General Information', 
+    id: 'GeneralInfo', 
+    purpose: #STANDARD, 
+    position: 10 , 
+    type: #IDENTIFICATION_REFERENCE
+  },
+  { 
+    purpose: #STANDARD,
+    type: #LINEITEM_REFERENCE,
+    label: 'Pick List Values',
+    position: 20,
+    targetElement: '_Child'
+  } ]
+  @UI.identification: [ {
+    position: 10 , 
+    label: 'ListId'
+  } ]
+  @UI.lineItem: [ {
+    position: 10 , 
+    label: 'ListId'
+  } ]
+  @UI.selectionField: [ {
+    position: 10 
+  } ]
+  ListId;
+  @EndUserText.label: 'List Name'
+  @UI.identification: [ { position: 20 , label: 'List Name' } ]
+  @UI.lineItem: [ { position: 20 ,label: 'List Name' } ]
+  @UI.selectionField: [ { position: 20 } ]
+   @Search.defaultSearchElement: true
+  @Search.fuzzinessThreshold: 0.8
+  ListName;
+   @EndUserText.label: 'App Related to'
+  @UI.identification: [ {
+    position: 30 , 
+    label: 'App Related to'
+  } ]
+  @UI.lineItem: [ {
+    position: 30 , 
+    label: 'App Related to'
+  } ]
+  @UI.selectionField: [ {
+    position: 30 
+  } ]
+  AppRelated;
+  
+  @EndUserText.label: 'Created By'
+  @UI.identification: [ {
+    position: 40 
+  } ]
+  @UI.lineItem: [ {
+    position: 40 
+  } ]
+  @UI.selectionField: [ {
+    position: 40 
+  } ]
+  Createdby;
+  @EndUserText.label: 'Created At'
+  @UI.identification: [ {
+    position: 50 
+  } ]
+  @UI.lineItem: [ {
+    position: 50 
+  } ]
+  @UI.selectionField: [ {
+    position: 50 
+  } ]
+  Createdat;
+  @EndUserText.label: 'Last Changed By'
+  @UI.identification: [ {
+    position: 60 
+  } ]
+  @UI.lineItem: [ {
+    position: 60 
+  } ]
+  @UI.selectionField: [ {
+    position: 60 
+  } ]
+  Lastchangedby;
+  @EndUserText.label: 'Last Changed At'
+  @UI.identification: [ {
+    position: 70 
+  } ]
+  @UI.lineItem: [ {
+    position: 70 
+  } ]
+  @UI.selectionField: [ {
+    position: 70 
+  } ]
+  Lastchangedat;
+  
+}

@@ -1,0 +1,15 @@
+@EndUserText: {
+  label: 'Service Definition for ZC_GRC_PICKLST_P'
+}
+@ObjectModel: {
+  leadingEntity: {
+    name: 'ZC_GRC_PICKLST_P'
+  }
+}
+define service ZUI_GRC_PICKLST_O4
+  provider contracts odata_v4_ui {
+  expose ZC_GRC_PICKLST_P;
+  expose ZC_GRC_PICKLST_C;
+  expose ZR_GRC_PICKLST_P;
+  expose ZR_GRC_PICKLST_C;
+}

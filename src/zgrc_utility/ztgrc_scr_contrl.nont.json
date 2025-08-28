@@ -1,0 +1,11 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "SAP Object Node Type ZTGRC_SCR_CONTRL",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "name": "ZTGRC_SCR_CONTRL",
+  "sapObjectType": "ZTGRC_SCR_CONTRL",
+  "rootNode": true
+}
